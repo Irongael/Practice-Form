@@ -1,18 +1,17 @@
 let pass = document.querySelector("#pass");
 let conPass = document.querySelector("#conPass");
-const btn = querySelector("#btn");
 
-function checkPass(pass1, pass2) {
-    if(pass1 == pass2) {
-        return true;
+function checkPass() {
+    if(pass.value == conPass.value) {
+        pass.classList.remove("mismatch");
+        pass.classList.add("match");
+        conPass.classList.remove("mismatch");
+        conPass.classList.add("match");
     }
     else {
-        return false;
+        pass.classList.remove("match");
+        pass.classList.add("mismatch");
+        conPass.classList.remove("match");
+        conPass.classList.add("mismatch");
     }
 }
-
-btn.addEventListener('click', () => {
-    if(!(checkPass(pass, conPass))) {
-        pass.setCustomValidity("passwords don't match");
-    }
-});

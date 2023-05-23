@@ -41,23 +41,23 @@
                     
                     <div class="form-item">
                         <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" pattern="\d{10}">
                     </div>
                     
                     <div class="form-item">
                         <label for="pass">Password:</label>
-                        <input type="password" id="pass" name="">
+                        <input type="password" id="pass" name="" oninput="checkPass();">
                     </div>
                     
                     <div class="form-item">
                         <label for="conPass">Confirm Password:</label>
-                        <input type="password" id="conPass" name="pass">
+                        <input type="password" id="conPass" name="pass" oninput="checkPass();">
                     </div>
 
                     <div class="form-item">
                         <button type="submit" id="btn">Submit</button>
                     </div>
-                    
+                    <p class="aster">**Green fields are valid, Red fields are invalid.</p>
                 </form>
             </div>
             <div class="hasAcc">
