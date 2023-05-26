@@ -3,15 +3,15 @@ let conPass = document.querySelector("#conPass");
 
 function checkPass() {
     if(pass.value == conPass.value) {
-        pass.classList.remove("mismatch");
-        pass.classList.add("match");
-        conPass.classList.remove("mismatch");
-        conPass.classList.add("match");
+        pass.classList.remove("invalid");
+        pass.classList.add("valid");
+        conPass.classList.remove("invalid");
+        conPass.classList.add("valid");
     }
     else {
-        pass.classList.remove("match");
-        pass.classList.add("mismatch");
-        conPass.classList.remove("match");
-        conPass.classList.add("mismatch");
+        pass.classList.remove("valid");
+        pass.classList.add("invalid");
+        conPass.classList.remove("valid");
+        conPass.classList.add("invalid");
     }
 }

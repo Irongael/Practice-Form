@@ -72,30 +72,16 @@ button {
     justify-content: space-between;
 }
 
-.passItem {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .hasAcc {
     height: 10rem;
     padding: 10px;
 }
 
-.match {
+.valid {
     background-color: lightgreen;
 }
 
-.mismatch {
-    background-color: red;
-}
-
-.formItem input:valid {
-    background-color: lightgreen;
-}
-
-.formItem input:invalid {
+.invalid {
     background-color: red;
 }
 

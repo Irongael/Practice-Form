@@ -26,17 +26,17 @@
                     
                     <div class="formItem">
                         <label for="fname">First Name:</label>
-                        <input type="text" id="fname" name="fname" pattern="\w">
+                        <input type="text" id="fname" name="fname" pattern="\w" required>
                     </div>
                     
                     <div class="formItem">
                         <label for="lname">Last Name:</label>
-                        <input type="text" id="lname" name="lname">
+                        <input type="text" id="lname" name="lname" required>
                     </div>
                     
                     <div class="formItem">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
                     
                     <div class="formItem">
@@ -44,14 +44,14 @@
                         <input type="tel" id="phone" name="phone" pattern="">
                     </div>
                     
-                    <div class="passItem">
+                    <div class="formItem">
                         <label for="pass">Password:</label>
-                        <input type="password" id="pass" name="" oninput="checkPass();">
+                        <input type="password" id="pass" name="" oninput="checkPass();" required>
                     </div>
                     
-                    <div class="passItem">
+                    <div class="formItem">
                         <label for="conPass">Confirm Password:</label>
-                        <input type="password" id="conPass" name="pass" oninput="checkPass();">
+                        <input type="password" id="conPass" name="pass" oninput="checkPass();" required>
                     </div>
 
                     <div class="formItem">
