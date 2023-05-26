@@ -66,7 +66,13 @@ button {
     font-size: 0.8rem;
 }
 
-.form-item {
+.formItem {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.passItem {
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -85,12 +91,16 @@ button {
     background-color: red;
 }
 
-input:valid {
+.formItem input:valid {
     background-color: lightgreen;
 }
 
-input:invalid {
+.formItem input:invalid {
     background-color: red;
+}
+
+.aster {
+    padding-left: 5%;
 }
 
 @media (max-width: 650px) {
