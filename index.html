@@ -24,32 +24,32 @@
                 <form class="form">
                     <legend class="form-legend">Sign-up Today!</legend>
                     
-                    <div class="formItem">
+                    <div id="fnameItem" class="formItem">
                         <label for="fname">First Name:</label>
-                        <input type="text" id="fname" name="fname" pattern="\w" required>
+                        <input type="text" id="fname" name="fname" pattern="" oninput="pressed('fname');" required>
                     </div>
                     
-                    <div class="formItem">
+                    <div id="lnameItem"  class="formItem">
                         <label for="lname">Last Name:</label>
-                        <input type="text" id="lname" name="lname" required>
+                        <input type="text" id="lname" name="lname" pattern="" oninput="pressed('lname');" required>
                     </div>
                     
-                    <div class="formItem">
+                    <div id="emailItem"  class="formItem">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" oninput="pressed('email');" required>
                     </div>
                     
-                    <div class="formItem">
+                    <div id="phoneItem"  class="formItem">
                         <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" pattern="">
+                        <input type="tel" id="phone" name="phone" oninput="pressed('phone');" pattern="" required>
                     </div>
                     
-                    <div class="formItem">
+                    <div id="passItem"  class="formItem">
                         <label for="pass">Password:</label>
                         <input type="password" id="pass" name="" oninput="checkPass();" required>
                     </div>
                     
-                    <div class="formItem">
+                    <div id="conPassItem"  class="formItem">
                         <label for="conPass">Confirm Password:</label>
                         <input type="password" id="conPass" name="pass" oninput="checkPass();" required>
                     </div>

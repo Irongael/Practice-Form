@@ -85,6 +85,14 @@ button {
     background-color: red;
 }
 
+.pressed input:valid {
+    background-color: lightgreen;
+}
+
+.pressed input:invalid {
+    background-color: red;
+}
+
 .aster {
     padding-left: 5%;
 }
