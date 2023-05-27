@@ -1,8 +1,9 @@
 function checkPass() {
     let pass = document.querySelector("#pass");
     let conPass = document.querySelector("#conPass");
+    let myRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
 
-    if(pass.value == conPass.value) {
+    if((pass.value == conPass.value) && (myRegex.test(pass.value))) {
         pass.classList.remove("invalid");
         pass.classList.add("valid");
         conPass.classList.remove("invalid");

@@ -46,12 +46,12 @@
                     
                     <div id="passItem"  class="formItem">
                         <label for="pass">Password:</label>
-                        <input type="password" id="pass" name="" oninput="checkPass();" placeholder="Supersecretpassword93!@" required>
+                        <input type="password" id="pass" name="" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" oninput="checkPass();" placeholder="Supersecretpassword93!@" required>
                     </div>
                     
                     <div id="conPassItem"  class="formItem">
                         <label for="conPass">Confirm Password:</label>
-                        <input type="password" id="conPass" name="pass" oninput="checkPass();" placeholder="Supersecretpassword93!@" required>
+                        <input type="password" id="conPass" name="pass" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" oninput="checkPass();" placeholder="Supersecretpassword93!@" required>
                     </div>
 
                     <div class="formItem">
